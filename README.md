@@ -22,7 +22,7 @@ public class Developer {
 
 
 public static void main(String[] args) {
-   Developer me = new Developer("Tommy", "he/him", "Java, NodeJS, Python, HTML/CSS/JS, and coding in general ;)");
+   Developer me = new Developer("Tommy", "he/him", new String[]{"Java", "NodeJS", "Python", "HTML/CSS/JS", "coding in general ;)"});
    me.sayHello();
 }
 

@@ -1,16 +1,29 @@
 ### Hi there 👋
 
-<!--
-**tommyskeff/tommyskeff** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+```java
 
-Here are some ideas to get you started:
+public class Developer {
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+    private String name;
+    private String pronouns;
+    private String[] interests;
+
+   public Developer(String name, String pronouns, String[] interests) {
+      this.name = name;
+      this.pronouns = pronouns;
+      this.interests = interests;
+   }
+   
+   public void sayHello() {
+      System.out.println("Hi! My name is " + name + " (" + pronouns + "), and I like " + Arrays.toString(interests));
+   }
+
+}
+
+
+public static void main(String[] args) {
+   Developer me = new Developer("Tommy", "he/him", "Java, NodeJS, Python, HTML/CSS/JS, and coding in general ;)");
+   me.sayHello();
+}
+
+```
